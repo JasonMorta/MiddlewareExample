@@ -1,11 +1,12 @@
 // routes/loginRoute.js
 // get the userController
 const { userController } = require('../controllers/userController');
+const { verifyCookieAndToken } = require('../middleware/authTokencNcookie');
 
 const loginRoute = (app) => {
-    console.log('login route');
+    console.log('login route💡');
 
-    app.get('/login', userController);
+    app.post('/login', verifyCookieAndToken , userController);
     //This route URL will be http://localhost:8080/login
 };
 

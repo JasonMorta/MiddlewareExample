@@ -1,5 +1,6 @@
 // middleware/jwtMiddleware.js
 const jwt = require('jsonwebtoken');
+const cookieParser = require('cookie-parser');
 
 // Define a secured middleware function
 function jwtMiddleware(req, res, next) {

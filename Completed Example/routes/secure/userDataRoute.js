@@ -3,8 +3,10 @@
 const { getTodos } = require('../../controllers/userController');
 
 //Import our JWT middleware
-const { jwtMiddleware } = require('../../middleware/jwtMiddleware.js');
+const { jwtMiddleware } = require('../../middleware/JWT.js');
 
+
+// Define the login route
 const userDataRoute = (app) => {
 
     app.get('/login/data',jwtMiddleware, getTodos);
