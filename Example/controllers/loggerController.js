@@ -16,6 +16,12 @@ const loggerController = (req, res) => {
   res.send('Server response from loggerController')
 }
 
+
+
+
+
+
+
 //Here the controller functions is exported to be used on the route: myLoggerRoute.js
 module.exports = {
   loggerController,
