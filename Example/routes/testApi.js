@@ -1,7 +1,7 @@
 const {testAPI} = require('../controllers/testAPIController');
 
 const testAPIRoute = (app) => {
-  app.post('/testAPI/1.1/charts', testAPI);
+  app.post('/testapi/1.1/charts', testAPI);
 };
 
 
