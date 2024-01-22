@@ -1,5 +1,5 @@
 //test API
-const testAPI = (req, res) => {
+const test_api_ctrl = (req, res) => {
         // Log headers
         console.log('Headers:', req.headers);
 
@@ -15,5 +15,5 @@ const testAPI = (req, res) => {
 
 
 module.exports = {
-    testAPI,
+    test_api_ctrl,
 };

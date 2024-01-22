@@ -9,12 +9,12 @@ app.use(cors(corsOptions));
 
 // import the myLoggerRoute
 const myLoggerRoute = require('./routes/myLoggerRoute');
-const testAPIRoute = require('./routes/testApi');
+const test_api_route = require('./routes/test_api_route');
 
 // Step 1: call the myLoggerRoute function and pass in the app object as an argument
 
 myLoggerRoute(app); 
-testAPIRoute(app);
+test_api_route(app);
 // ==> From here go to routes/myLoggerRoute.js
 
 
