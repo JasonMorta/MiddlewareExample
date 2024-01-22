@@ -1,6 +1,15 @@
 //test API
 const testAPI = (req, res) => {
-    console.log('req', req.headers)
+        // Log headers
+        console.log('Headers:', req.headers);
+
+        // Log body data
+        if (req.method === 'POST' || req.method === 'PUT') {
+            console.log('Body:', req.body);
+        }
+
+
+        
     //res.send(req.body);
 }
 
